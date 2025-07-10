@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @sye2003
-- 👀 I’m interested in building innovative projects in the field of Robotics, IOT, Embedded Systems
+- 👀 I’m interested in building innovative projects in the field of Robotics, IOT, Embedded Systems and computer vision
 
 
 <!---
