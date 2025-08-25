@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Abudahair's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            color: #fff;
+        }
+        #bgCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background: linear-gradient(135deg, rgba(0,0,0,0.95), rgba(25,25,25,0.85));
+        }
+        .glass-bg {
+            background: rgba(20, 20, 20, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12">
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="max-w-4xl mx-auto glass-bg border border-gray-700 rounded-lg shadow-xl p-6 md:p-10">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-200">SYED ABUDAHIR</h1>
+            <p class="text-lg text-neutral-400 mt-2">Aspiring Engineer | Machine Learning Enthusiast | Problem Solver</p>
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mt-6">
+                <a href="https://github.com/sye2003" class="px-4 py-2 glass-bg text-neutral-300 rounded-full hover:bg-neutral-700 transition-colors">GitHub</a>
+                <a href="https://leetcode.com/u/syedabudahir/" class="px-4 py-2 glass-bg text-neutral-300 rounded-full hover:bg-neutral-700 transition-colors">Leetcode</a>
+                <a href="https://www.linkedin.com/in/syed-abudahir-a-44b076237/" class="px-4 py-2 glass-bg text-neutral-300 rounded-full hover:bg-neutral-700 transition-colors">LinkedIn</a>
+                <a href="#" class="px-4 py-2 glass-bg text-neutral-300 rounded-full hover:bg-neutral-700 transition-colors">Resume</a>
+                <a href="mailto:abu7862222222@gmail.com" class="px-4 py-2 glass-bg text-neutral-300 rounded-full hover:bg-neutral-700 transition-colors">Email</a>
+            </div>
+        </header>
+
+        <main class="space-y-6">
+            <div class="accordion-item glass-bg rounded-lg border border-gray-700">
+                <button class="accordion-header w-full flex justify-between items-center p-4 sm:p-6 text-xl font-semibold text-left focus:outline-none">
+                    <span>Projects</span>
+                    <svg class="h-6 w-6 text-neutral-400 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="accordion-content">
+                    <ul class="list-disc list-inside mt-4 space-y-2 text-neutral-300">
+                        <li><strong>House Price Prediction:</strong> Built a regression model to predict housing prices using scikit-learn. <a href="#" class="text-gray-500 hover:text-white transition-colors underline">View Project</a></li>
+                        <li><strong>Vehicle Detection & Speed Estimation:</strong> Used OpenCV and YOLO to count vehicles and estimate their speeds. <a href="#" class="text-gray-500 hover:text-white transition-colors underline">View Project</a></li>
+                        <li><strong>Image Search by Description:</strong> Implemented a text-to-image retrieval system using embeddings. <a href="#" class="text-gray-500 hover:text-white transition-colors underline">View Project</a></li>
+                        <li><strong>Football Match Analysis:</strong> Analyzed player movements and match stats with computer vision. <a href="#" class="text-gray-500 hover:text-white transition-colors underline">View Project</a></li>
+                        <li><strong>Autonomous Drone Simulation:</strong> Created a simulation of a drone navigating using reinforcement learning. <a href="#" class="text-gray-500 hover:text-white transition-colors underline">View Project</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item glass-bg rounded-lg border border-gray-700">
+                <button class="accordion-header w-full flex justify-between items-center p-4 sm:p-6 text-xl font-semibold text-left focus:outline-none">
+                    <span>My Skills</span>
+                    <svg class="h-6 w-6 text-neutral-400 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="accordion-content">
+                    <p class="text-neutral-400">Highlight your technical and soft skills here. You can categorize them for better readability.</p>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-neutral-300">
+                        <div>
+                            <h4 class="font-bold text-gray-200">Front-end:</h4>
+                            <p>HTML, CSS, JavaScript, React, Tailwind CSS, Svelte</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-200">Back-end:</h4>
+                            <p>Node.js, Express.js, Python, Flask</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-200">Databases:</h4>
+                            <p>MongoDB, SQL</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-200">Tools:</h4>
+                            <p>Git, GitHub, VS Code, Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item glass-bg rounded-lg border border-gray-700">
+                <button class="accordion-header w-full flex justify-between items-center p-4 sm:p-6 text-xl font-semibold text-left focus:outline-none">
+                    <span>Goals</span>
+                    <svg class="h-6 w-6 text-neutral-400 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="accordion-content">
+                    <p class="text-neutral-400">This section can be used to describe your professional goals, what you are currently learning, or what you hope to achieve in your career.</p>
+                    <p class="mt-4 text-neutral-300">My primary goal is to become a full-stack developer, building scalable and user-friendly applications. I'm currently focusing on learning machine learning, robotics, and cloud services to expand my skill set.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item glass-bg rounded-lg border border-gray-700">
+                <button class="accordion-header w-full flex justify-between items-center p-4 sm:p-6 text-xl font-semibold text-left focus:outline-none">
+                    <span>Education & Others</span>
+                    <svg class="h-6 w-6 text-neutral-400 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="accordion-content">
+                    <p class="text-neutral-400">Here you can list your educational background, certifications, or any other relevant information.</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2 text-neutral-300">
+                        <li><strong>University Name:</strong> Bachelor of Science in Computer Science, Year</li>
+                        <li><strong>Certifications:</strong> AWS Certified Cloud Practitioner</li>
+                        <li><strong>Interests:</strong> Robotics, drones, and exploring new technologies.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const symbols = ["Σ", "π", "θ", "∫", "√", "∞", "∆", "E=mc²", "ƒ(x)", "Ω", "λ", "μ", "ν", "ξ", "ψ", "φ", "α", "β", "γ", "δ", "∇", "?"];
+
+        class FloatingSymbol {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = 16 + Math.random() * 30;
+                this.speedX = (Math.random() - 0.5) * 1.2;
+                this.speedY = (Math.random() - 0.5) * 1.2;
+                this.symbol = symbols[Math.floor(Math.random() * symbols.length)];
+            }
+            draw() {
+                ctx.font = `${this.size}px 'Times New Roman'`;
+                ctx.fillStyle = "rgba(255,255,255,0.15)";
+                ctx.fillText(this.symbol, this.x, this.y);
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+                    this.reset();
+                }
+                this.draw();
+            }
+        }
+
+        const floatingSymbols = [];
+        for (let i = 0; i < 40; i++) {
+            floatingSymbols.push(new FloatingSymbol());
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            floatingSymbols.forEach(s => s.update());
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
