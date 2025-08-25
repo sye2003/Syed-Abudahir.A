@@ -1,0 +1,33 @@
+/* Basic body styling for font and background */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Create a subtle radial gradient background to make the glass effect visible */
+    background: radial-gradient(circle at center, #222 0%, #000 100%);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Styling for the collapsible accordion content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    /* Smooth transition for opening and closing */
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 1rem;
+}
+
+.accordion-content.active {
+    max-height: 500px; /* Adjust as needed for content length */
+    padding: 1rem;
+    border-top: 1px solid #333;
+}
+
+/* Styling for the accordion header icon */
+.accordion-header svg {
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active svg {
+    /* Rotate the icon when the section is open */
+    transform: rotate(180deg);
+}
